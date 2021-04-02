@@ -20,6 +20,6 @@ for elem in urls:
     oldstr = str(cost.text)
     costs.append(oldstr.replace("₽", ""))
 
-with open("../costData.json", "w") as f:
+with open("costPaster/costData.json", "w") as f:
     json.dump({names[i]: costs[i] for i in range(len(names))}, f, sort_keys=True, indent=4)
 
