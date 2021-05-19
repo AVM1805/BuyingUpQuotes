@@ -11,7 +11,7 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-readTextFile("costData.json", function(text){
+readTextFile("./costData.json", function(text){
     var data = JSON.parse(text);
     document.getElementById('INTRR').innerHTML = data.INTRR
     document.getElementById('RCOM').innerHTML = data.RCOM
